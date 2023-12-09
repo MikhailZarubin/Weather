@@ -1,11 +1,11 @@
-package com.mzarubin.weather.domain.network
+package com.mzarubin.weather.datalayer.network
 
 import okhttp3.HttpUrl
 import okhttp3.Interceptor
 import okhttp3.Response
 
 class RequestInterceptor(
-    private val queryParamsMap: Map<String, String>
+    var queryParamsMap: Map<String, String> = emptyMap()
 ) : Interceptor {
 
     override fun intercept(chain: Interceptor.Chain): Response {

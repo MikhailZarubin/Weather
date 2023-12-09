@@ -1,8 +1,17 @@
-package com.mzarubin.weather.data
+package com.mzarubin.weather.datamodel
 
 import com.google.gson.annotations.SerializedName
 
-sealed class ServerResponse
+data class CountryDataModel(
+    @field:SerializedName("country") val countryName: String,
+    @field:SerializedName("cities") val citiesNameList: List<String>
+)
+
+data class CountriesResponse(
+    @field:SerializedName("error") val error: Boolean,
+    @field:SerializedName("msg") val message: String,
+    @field:SerializedName("data") val data: List<CountryDataModel>
+)
 
 data class LocationDataModel(
     @field:SerializedName("name") val name: String,
@@ -20,4 +29,4 @@ data class WeatherDataModel(
 data class WeatherResponse(
     @field:SerializedName("location") val locationDataModel: LocationDataModel,
     @field:SerializedName("current") val weatherDataModel: WeatherDataModel
-) : ServerResponse()
+)
