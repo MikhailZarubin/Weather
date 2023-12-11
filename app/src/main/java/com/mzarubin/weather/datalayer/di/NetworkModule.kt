@@ -1,4 +1,4 @@
-package com.mzarubin.weather.datalayer.network.di
+package com.mzarubin.weather.datalayer.di
 
 import com.mzarubin.weather.BuildConfig
 import com.mzarubin.weather.datalayer.network.CountriesService

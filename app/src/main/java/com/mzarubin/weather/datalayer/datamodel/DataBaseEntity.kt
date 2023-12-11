@@ -1,4 +1,4 @@
-package com.mzarubin.weather.datamodel
+package com.mzarubin.weather.datalayer.datamodel
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -15,5 +15,6 @@ data class LocalityEntity(
 data class WeatherEntity(
     @PrimaryKey val uid: Int,
     @ColumnInfo("temperature") val temperature: String,
-    @ColumnInfo("measure_time") val measureTime: String
+    @ColumnInfo("measure_time") val measureTime: String,
+    @ColumnInfo("update_time") val updateTime: String
 )
