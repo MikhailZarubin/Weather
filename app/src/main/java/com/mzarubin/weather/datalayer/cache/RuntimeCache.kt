@@ -9,5 +9,7 @@ interface RuntimeCache<T> {
 
     fun getCache(): T
 
+    fun hasCache(): Boolean
+
     fun clearCache()
 }

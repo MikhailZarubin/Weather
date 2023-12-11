@@ -1,6 +1,6 @@
 package com.mzarubin.weather.datalayer.network
 
-import com.mzarubin.weather.datamodel.WeatherResponse
+import com.mzarubin.weather.datalayer.datamodel.WeatherResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 

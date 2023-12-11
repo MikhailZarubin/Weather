@@ -1,4 +1,4 @@
-package com.mzarubin.weather.datalayer.cache.di
+package com.mzarubin.weather.datalayer.di
 
 import com.mzarubin.weather.datalayer.cache.CountriesRuntimeCache
 import dagger.Module

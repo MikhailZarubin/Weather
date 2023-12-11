@@ -1,6 +1,6 @@
 package com.mzarubin.weather.datalayer.network
 
-import com.mzarubin.weather.datamodel.CountriesResponse
+import com.mzarubin.weather.datalayer.datamodel.CountriesResponse
 import retrofit2.http.GET
 
 /**
