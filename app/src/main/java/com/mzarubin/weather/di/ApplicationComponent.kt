@@ -1,7 +1,6 @@
 package com.mzarubin.weather.di
 
 import android.app.Application
-import com.mzarubin.weather.WeatherApplication
 import com.mzarubin.weather.datalayer.di.CacheModule
 import com.mzarubin.weather.datalayer.di.DataBaseModule
 import com.mzarubin.weather.datalayer.di.NetworkModule
@@ -23,6 +22,4 @@ interface ApplicationComponent {
     interface Factory {
         fun create(@BindsInstance application: Application): ApplicationComponent
     }
-
-    fun inject(application: WeatherApplication)
 }
