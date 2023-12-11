@@ -6,12 +6,10 @@ import kotlinx.coroutines.flow.Flow
 interface LocationRepository {
 
     /**
-     * Return flow which contains response with LocalitiesDataModel or ErrorDataModel
+     * Return flow which contains response with LocalitiesDataModel
      */
     fun getFavoriteLocalities(): Flow<Response>
 
-    /**
-     * Return flow which contains response with CoordinatesDataModel or ErrorDataModel
-     */
+    //: TODO
     fun getCurrentCoordinates(): Flow<Response>
 }

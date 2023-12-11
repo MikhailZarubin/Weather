@@ -34,6 +34,10 @@ data class WeatherDataModel(
     val location: Location
 ) : Response()
 
+data class ConfigurationDataModel(
+    val useCurrentCoordinates: Boolean
+) : Response()
+
 data class ErrorDataModel(
     val errorMessage: String?
 ) : Response()
